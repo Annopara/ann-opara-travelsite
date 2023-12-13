@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, "Geneva", Tahoma, sans-serif;
+  /* Why is Geneva white without the quotes */
+}
+
+/* 
+  VARIABLES
+ */
+
+:root {
+  /* Colors */
+  --secondary: #fff;
+  --on-secondary: #28282b;
+  --primary: #db7a4e;
+  --on-primary: #335576;
+  --tertiary: #fefaf5;
+
+  /* Typography */
+  --heading-1: 2.6669rem;
+  --heading-2: 2.3331rem;
+  --heading-3: 2rem;
+  --sub-heading: 1.5rem;
+  --paragraph: 1rem;
+  --nav-text: 0.875rem;
+  --nav-subtile: 0.75rem;
+  --btn-text: 1.5rem;
+
+  /* Font Weight */
+  --weight-bold: 900;
+  --weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+
+  /* Box Shadow */
+  --card-elevation: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+  HEADER SECTION
+*/
+
+.header {
+  padding: 2rem;
+  background-color: var(--secondary);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: var(--on-primary);
+  font-weight: var(--heading-2);
+}
+
+.header__ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  text-decoration: none;
+  padding: 0 0.3rem;
+  /* Must I hard-code to space the links */
+  color: var(--on-secondary);
+  font-size: var(--nav-text);
+}
+
+.header__link:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 5px solid var(--primary);
+  cursor: pointer;
+}
+
+/* 
+  FOOTER SECTION
+*/
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--tertiary);
+}
+
+.footer__title {
+  font-size: var(--sub-heading);
+  color: var(--on-primary);
+  margin: 0 0 1.5rem 0;
+  font-weight: var(--weight-semi-bold);
+}
+
+.footer__subtitle {
+  font-size: var(--nav-text);
+  font-weight: var(--weight-regular);
+  color: var(--primary);
+  display: block;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.07rem;
+  /* Letter spacing for rem or px */
+}
+
+/* Footer Contact Email */
+
+.footer__email {
+  text-decoration: none;
+  font-size: var(--nav-subtile);
+  font-weight: var(--weight-regular);
+  color: var(--on-primary);
+}
+
+/* Footer Hours/Days */
+
+.footer__title:nth-child(2) {
+  margin: 2rem 0;
+}
+
+.footer__day-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+}
+
+.footer__day {
+  padding: 0 1.5rem 0.6rem 0;
+  font-size: var(--nav-subtile);
+  font-weight: var(--weight-regular);
+  color: var(--on-primary);
+}
+
+/* Footer Socials */
+
+.footer__social-title {
+  margin-bottom: 30px;
+}
+/* HELP!!!!!!!!!!!!!!!! */
+
+.footer__icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__icon {
+  padding: 0 1.5rem 0 0;
+  /* Does collapsing only work with margin */
+  height: 24px;
+  /* Can we use rem for icons */
+}
