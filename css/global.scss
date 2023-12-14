@@ -1,0 +1,121 @@
+@use "../css/partials/variable" as *;
+@use "../css/partials/mixins" as *;
+
+* {
+  @include reset;
+}
+
+body {
+  @include body;
+}
+
+/* 
+  HEADER SECTION
+*/
+
+.header {
+  padding: 2rem;
+  background-color: $secondary-color;
+
+  &__nav {
+    @include flex;
+  }
+
+  &__logo {
+    text-decoration: none;
+    color: $on-primary-color;
+    font-weight: $heading-2;
+  }
+
+  &__ul {
+    list-style: none;
+    @include flex;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 0 0.3rem;
+    color: $on-secondary-color;
+    font-size: $nav-text;
+
+    &:hover {
+      padding-bottom: 0.5rem;
+      border-bottom: 5px solid $primary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+/* 
+  FOOTER SECTION
+*/
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: $tertiary-color;
+  &__title {
+    font-size: $sub-heading;
+    color: $on-primary-color;
+    margin: 0 0 1.5rem 0;
+    font-weight: $weight-semi-bold;
+  }
+  &__subtitle {
+    font-size: $nav-text;
+    font-weight: $weight-regular;
+    color: $primary-color;
+    display: block;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 0.07rem;
+    /* Letter spacing for rem or px */
+  }
+  /* Footer Contact Email */
+  &__email {
+    text-decoration: none;
+    font-size: $nav-subtile;
+    font-weight: $weight-regular;
+    color: $on-primary-color;
+  }
+
+  /* Footer Hours/Days */
+
+  &__title:nth-child(2) {
+    margin: 2rem 0;
+  }
+
+  &__day-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  &__day {
+    padding: 0 1.5rem 0.6rem 0;
+    font-size: $nav-subtile;
+    font-weight: $weight-regular;
+    color: $on-primary-color;
+  }
+
+  /* Footer Socials */
+
+  &__social-title {
+    margin-bottom: 30px;
+  }
+  /* HELP!!!!!!!!!!!!!!!! */
+
+  &__icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__icon {
+    padding: 0 1.5rem 0 0;
+    /* Does collapsing only work with margin */
+    height: 24px;
+    /* Can we use rem for icons */
+  }
+}
