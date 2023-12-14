@@ -13,3 +13,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin img__background($img-url) {
+  width: 100%;
+  height: 100%;
+  background-image: url($img-url);
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in;
+}

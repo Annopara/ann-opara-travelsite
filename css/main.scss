@@ -1,0 +1,104 @@
+@use "./partials/variable" as *;
+@use "./partials/mixins" as *;
+
+/* 
+HERO SECTION
+*/
+.hero {
+  @include flex;
+  background-color: $tertiary-color;
+  height: 100vh;
+  padding: $container-padding;
+  margin-bottom: 40px;
+
+  &__text-container {
+    width: 50%;
+    text-align: left;
+  }
+
+  &__heading {
+    color: $on-primary-color;
+    font-size: $heading-3;
+    line-height: 1.25;
+    width: 80%;
+  }
+
+  &__body {
+    margin: 1rem 0;
+    font-size: $paragraph;
+    line-height: 1.5;
+    color: $on-primary-color;
+  }
+
+  &__a {
+    text-decoration: none;
+  }
+
+  &__btn {
+    border-radius: 28px;
+    font-size: 1rem;
+    padding: 0.625rem 1.25rem;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: 0;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 500px;
+  }
+}
+
+/* 
+RECOMMENDATION SECTION
+*/
+
+.destination {
+  background-color: $secondary-color;
+  color: $on-primary-color;
+  height: 80vh;
+  padding: $container-padding;
+
+  &__section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  &__card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: $card-elevation;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  //   Hawaii background-image
+  &__img-container-hawaii {
+    @include img__background("../assets/images/hawaii.jpg");
+  }
+
+  //   Iceland background-image
+  &__img-container-iceland {
+    @include img__background("../assets/images/iceland.jpg");
+  }
+
+  //   Greece background-image
+  &__img-container-greece {
+    @include img__background("../assets/images/greece.jpg");
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1rem;
+    color: $secondary-color;
+  }
+}

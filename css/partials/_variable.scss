@@ -4,6 +4,7 @@ $on-secondary-color: #28282b;
 $primary-color: #db7a4e;
 $on-primary-color: #335576;
 $tertiary-color: #fefaf5;
+$inactive-link: #59595b;
 
 // Typography
 $heading-1: 2.6669rem;
@@ -23,3 +24,6 @@ $weight-regular: 400;
 
 // Box Shadow
 $card-elevation: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+// Container
+$container-padding: 2rem 4rem;
