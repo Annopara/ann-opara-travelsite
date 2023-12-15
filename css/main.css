@@ -66,6 +66,7 @@ RECOMMENDATION SECTION
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  transition: opacity 0.5s ease-in;
 }
 .destination__card:hover {
   opacity: 0.8;
@@ -76,7 +77,6 @@ RECOMMENDATION SECTION
   background-image: url("../assets/images/hawaii.jpg");
   background-size: cover;
   background-position: center;
-  transition: opacity 0.5s ease-in;
 }
 .destination__img-container-iceland {
   width: 100%;
@@ -84,7 +84,6 @@ RECOMMENDATION SECTION
   background-image: url("../assets/images/iceland.jpg");
   background-size: cover;
   background-position: center;
-  transition: opacity 0.5s ease-in;
 }
 .destination__img-container-greece {
   width: 100%;
@@ -92,7 +91,6 @@ RECOMMENDATION SECTION
   background-image: url("../assets/images/greece.jpg");
   background-size: cover;
   background-position: center;
-  transition: opacity 0.5s ease-in;
 }
 .destination__name {
   position: absolute;

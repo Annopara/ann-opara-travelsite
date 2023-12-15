@@ -77,7 +77,7 @@ body {
   color: #db7a4e;
   display: block;
   margin: 0 0 0.5rem 0;
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.07px;
   /* Letter spacing for rem or px */
 }
 .footer__email {

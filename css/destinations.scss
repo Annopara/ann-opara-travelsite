@@ -1,0 +1,79 @@
+@use "../css/partials/variable" as *;
+@use "../css/partials/mixins" as *;
+
+// HERO SECTION
+
+.hero {
+  height: 100vh;
+  position: relative;
+
+  &__background--hawaii {
+    @include img__background("../assets/Images/hawaii.jpg");
+  }
+
+  &__background--iceland {
+    @include img__background("../assets/Images/iceland.jpg");
+  }
+
+  &__background--greece {
+    @include img__background("../assets/Images/greece.jpg");
+  }
+
+  &__title {
+    color: $secondary-color;
+    font-weight: $weight-semi-bold;
+    font-size: $heading-1;
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &-card {
+    background-color: $secondary-color;
+    padding: 1.5rem;
+    text-align: center;
+    width: 20%;
+    height: 55%;
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+  }
+
+  // &-card-1 {
+  //   left: 5%;
+  // }
+
+  // &-card-2 {
+  //   left: 35%;
+  // }
+
+  // &-card-3 {
+  //   left: 75%;
+  // }
+
+  // Positioning
+
+  &__card-title {
+    border-bottom: 3px solid black;
+  }
+
+  &__ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+
+  &__list {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 5px;
+    background-color: $tertiary-color;
+  }
+}
