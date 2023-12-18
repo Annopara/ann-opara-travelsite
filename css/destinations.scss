@@ -6,26 +6,40 @@
 .hero {
   height: 100vh;
   position: relative;
+  padding: 6rem 4rem;
 
   &__background--hawaii {
-    @include img__background("../assets/Images/hawaii.jpg");
+    @include destination__background {
+      width: 100%;
+      background-size: cover;
+      background-image: url("../assets/Images/hawaii.jpg");
+      background-position: center;
+    }
   }
 
   &__background--iceland {
-    @include img__background("../assets/Images/iceland.jpg");
+    @include destination__background {
+      width: 100%;
+      background-size: cover;
+      background-image: url("../assets/Images/iceland.jpg");
+      background-position: center;
+    }
   }
 
   &__background--greece {
-    @include img__background("../assets/Images/greece.jpg");
+    @include destination__background {
+      width: 100%;
+      background-size: cover;
+      background-image: url("../assets/Images/greece.jpg");
+      background-position: center;
+    }
   }
 
   &__title {
     color: $secondary-color;
     font-weight: $weight-semi-bold;
     font-size: $heading-1;
-    position: absolute;
-    top: 8rem;
-    left: 4rem;
+    margin-bottom: 2rem;
   }
 
   &__cards-container {
@@ -41,23 +55,7 @@
     width: 20%;
     height: 55%;
     border-radius: 5px;
-    position: absolute;
-    top: 35%;
   }
-
-  // &-card-1 {
-  //   left: 5%;
-  // }
-
-  // &-card-2 {
-  //   left: 35%;
-  // }
-
-  // &-card-3 {
-  //   left: 75%;
-  // }
-
-  // Positioning
 
   &__card-title {
     border-bottom: 3px solid black;

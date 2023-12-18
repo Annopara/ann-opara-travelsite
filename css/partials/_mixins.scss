@@ -1,14 +1,4 @@
-@mixin reset() {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@mixin body() {
-  font-family: Verdana, "Geneva", Tahoma, sans-serif;
-}
-
-@mixin flex() {
+@mixin flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,4 +10,8 @@
   background-image: url($img-url);
   background-size: cover;
   background-position: center;
+}
+
+@mixin destination__background {
+  @content;
 }
